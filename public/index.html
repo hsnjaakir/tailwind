@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-white">
+    <div>
+        <div class="p-5 bg-white sticky top-0 border-b flex items-center justify-around">
+            <div class="inline">
+                <span class="text-2xl cursor-pointer">
+                    <img class="h-4 inline" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDqO4hlGpuSkHwBPQAbGl8UEXbLlSLDcZckURROPzT&s" alt="">
+                    tailwindcss
+                </span>
+                <span class="mx-2">
+                    <select class="px-2 py-1 rounded-full outline-none bg-gray-200 text-sm cursor-pointer" name="" id="">
+                        <option value="">v3.2.4</option>
+                        <option value="">v2.2.19</option>
+                        <option value="">v1.9.6</option>
+                        <option value="">v0.7.4</option>
+                    </select>
+                </span>
+                <span class="mx-2">
+                    <a class="px-2 py-1 rounded-full outline-none bg-blue-200 text-sky-500 text-sm cursor-pointer">
+                        Tailwind CSS v3.2 . Dynamic breakpoints, multi-config, container queries, and more
+                    </a>
+                </span>
+            </div>
+            <ul class="flex items-center w-auto">
+                <li class="mx-4">
+                    <a class="text-md text-gray-500 hover:text-cyan-400" href="#">Docs</a>
+                </li>
+                <li class="mx-4">
+                    <a class="text-md text-gray-500 hover:text-cyan-400" href="#">Components</a>
+                </li>
+                <li class="mx-4">
+                    <a class="text-md text-gray-500 hover:text-cyan-400" href="#">Blog</a>
+                </li>
+                <li class="mx-4">
+                    <a class="text-md text-gray-500 hover:text-cyan-400" href="#">Showcase</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex justify-center mx-w-7">
+            <nav class="space-y-4 p-6 w-2/12 justify-center overflow-scroll">
+                <form class="sticky flex items-center">   
+                    <label for="simple-search" class="sr-only">Search</label>
+                    <div class="relative w-full">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+                    </div>
+                </form>
+                <ul class="space-y-4 flex flex-col">
+                    <li class="inline-flex">
+                        <svg class="w-6 mr-2 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Documentation</a>
+                    </li>
+                    <li class="inline-flex">
+                        <svg class="w-6 mr-2 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <a href="#" class="text-gray-500 hover:text-black">Components</a>
+                    </li>
+                    <li class="inline-flex">
+                        <svg class="w-6 mr-2 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <a href="#" class="text-gray-500 hover:text-black">Templates</a>
+                    </li>
+                    <li class="inline-flex">
+                        <svg class="w-6 mr-2 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <a href="#" class="text-gray-500 hover:text-black">Screencasts</a>
+                    </li>
+                    <li class="inline-flex">
+                        <svg class="w-6 mr-2 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <a href="#" class="text-gray-500 hover:text-black">Playground</a>
+                    </li>
+                    <li class="inline-flex">
+                        <svg class="w-6 mr-2 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Resources</a>
+                    </li>
+                    <li class="inline-flex">
+                        <svg class="w-6 mr-2 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <a href="#" class="text-gray-500 hover:text-black">Community</a>
+                    </li>
+                </ul>
+                <h5>Getting started</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Core Concepts</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Customizations</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Base styles</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                </ul>
+                <h5>Layout</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Flexbox & Grid</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Spacing</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Sizing</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Typography</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Backgrounds</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Borders</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Effects</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Filters</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Tables</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Transitions & Animations</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Transforms</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Interactivity</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>SVG</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Accesibilaty</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                <h5>Official Plugins</h5>
+                <ul class="ml-4 space-y-4 flex flex-col">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Installation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Editor Setup</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Using with Preprocessor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Optimizing for production</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500">Browser Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-black focus:text-sky-500    ">Upgrade Guide</a>
+                    </li>
+                </ul>
+                
+            </nav>
+            <main class="w-8/12 px-4 justify-start">
+                <h1>World</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elsoluta sapiente odio dolore dicta iure, error iste. Veritatis soluta tenetur molestiae?</p>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
