@@ -515,18 +515,145 @@
                                 <br><br>
                             </div>
                             <div>
-                                <h1 class="font-bold">Installation</h1>
+                                <h1 class="font-bold text-lg">Installation</h1>
+                                
+                                <div class="drop-shadow-lg">
+                                    <!-- Tab Buttons -->
+                                    <ul class="nav nav-tabs flex flex-row flex-wrap list-none border-b-0 pl-0 mb-4" id="tab-buttons"
+                                    role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a href="javascript:void(0)" onclick="changeTab(event, 0)" class="
+                                            nav-link
+                                            block
+                                            font-medium
+                                            text-xs
+                                            leading-tight
+                                            uppercase
+                                            border-x-0 border-t-0 border-b-2 border-transparent
+                                            px-6
+                                            py-3
+                                            my-2
+                                            hover:border-transparent hover:bg-gray-100
+                                            focus:border-transparent
+                                            active
+                                            " id="tabs-home-tab" data-bs-toggle="pill" data-bs-target="#tabs-home" role="tab" aria-controls="tabs-home"
+                                            aria-selected="true">Home</a>
+                                        </li>
+                                        <li class="nav-item" onclick="changeTab(event, 1)" role="presentation">
+                                            <a href="javascript:void(0)" class="
+                                            nav-link
+                                            block
+                                            font-medium
+                                            text-xs
+                                            leading-tight
+                                            uppercase
+                                            border-x-0 border-t-0 border-b-2 border-transparent
+                                            px-6
+                                            py-3
+                                            my-2
+                                            hover:border-transparent hover:bg-gray-100
+                                            focus:border-transparent
+                                            " id="tabs-profile-tab" data-bs-toggle="pill" data-bs-target="#tabs-profile" role="tab"
+                                            aria-controls="tabs-profile" aria-selected="false">Profile</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="javascript:void(0)" onclick="changeTab(event, 2)" class="
+                                            nav-link
+                                            block
+                                            font-medium
+                                            text-xs
+                                            leading-tight
+                                            uppercase
+                                            border-x-0 border-t-0 border-b-2 border-transparent
+                                            px-6
+                                            py-3
+                                            my-2
+                                            hover:border-transparent hover:bg-gray-100
+                                            focus:border-transparent
+                                            " id="tabs-messages-tab" data-bs-toggle="pill" data-bs-target="#tabs-messages" role="tab"
+                                            aria-controls="tabs-messages" aria-selected="false">Messages</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="javascript:void(0)" onclick="changeTab(event, 3)" class="
+                                            nav-link
+                                            disabled
+                                            pointer-events-none
+                                            block
+                                            font-medium
+                                            text-xs
+                                            leading-tight
+                                            uppercase
+                                            border-x-0 border-t-0 border-b-2 border-transparent
+                                            px-6
+                                            py-3
+                                            my-2
+                                            hover:border-transparent hover:bg-gray-100
+                                            focus:border-transparent
+                                            " id="tabs-contact-tab" data-bs-toggle="pill" data-bs-target="#tabs-contact" role="tab"
+                                            aria-controls="tabs-contact" aria-selected="false">Contact</a>
+                                        </li>
+                                    </ul>
+                            
+                                    <!-- Tab Panels -->
+                                    <div id="tab-panels" class="bg-white px-8 py-6">
+                                        <div>
+                                            <h1 class="text-2xl">Tab 1 Content</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, doloremque.</p>
+                                        </div>
+                            
+                                        <div class="hidden">
+                                            <h1 class="text-2xl text-red-500">Tab 2 Content</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, doloremque.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, doloremque.</p>
+                                        </div>
+                            
+                                        <div class="hidden">
+                                            <h1 class="text-2xl text-purple-600">Tab 3 Content</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, doloremque.</p>
+                                        </div>
+                                        <div class="hidden">
+                                            <h1 class="text-2xl text-cyan-600">Tab 3 Content</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, doloremque.</p>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+
                             </div>
                             
                         </div>
-                        <div class="w-3/12">
-                            
-                        </div>
+                        
                     </div>
+                </div>
+
+                <div class="w-2/12">
+                            
                 </div>
 
             </div>
         </div>
     </div>
+    <script>
+        function changeTab(event, index) {
+            var tabButtons = document.getElementById('tab-buttons').children;
+            var tabPanels = document.getElementById('tab-panels').children;
+
+            // Remove the active utility classes from all tabs (bg-white, text-blue-600)
+            // And hide all tab content (with the "hidden" utility)
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove('text-blue-600');
+                tabButtons[i].classList.remove('bg-white');
+                tabButtons[i].classList.add('text-white');
+                tabPanels[i].classList.add('hidden');
+            }
+
+            // Add the active utility classes to the currently active tab (bg-white, text-blue-600)
+            // And show the current tab content (remove the "hidden" utility)
+            tabButtons[index].classList.remove('text-white');
+            tabButtons[index].classList.add('text-blue-600');
+            tabButtons[index].classList.add('bg-white');
+            tabPanels[index].classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
